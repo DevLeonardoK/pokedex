@@ -1,3 +1,64 @@
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.pokemons {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr;
+}
+.pokemon {
+  margin: 0.5rem;
+  padding: 2rem 1rem;
+  background-color: #49d0b0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.pokemon .name {
+  color: #fff;
+  margin: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.pokemon .detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemon .number {
+  color: #000;
+  opacity: 0.4;
+  text-align: right;
+  font-size: 0.625rem;
+}
+
+.pokemon .detail .types {
+  list-style: none;
+}
+
+.pokemon .detail .types .type {
+  background-color: #61e1ca;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.625rem;
+  margin: 0.25rem 0;
+  border-radius: 1rem;
+}
+
+.pokemon .detail img {
+  max-width: 100%;
+  height: 70px;
+  align-self: flex-end; /**Somente o item fica para direita**/
 }
